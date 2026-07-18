@@ -1,0 +1,44 @@
+{
+  "onset": {
+    "Description": "Intended onset of the bar-aperture frame, relative to the start of the run."
+  },
+  "duration": {
+    "Description": "Intended display duration of the frame (3 Hz stimulus update rate)."
+  },
+  "trial_type": {
+    "Description": "Constant label; the retinotopic mapping task has no experimental conditions, only continuous bar sweeps.",
+    "Levels": {
+      "stimulus": "Bar-aperture stimulus frame"
+    }
+  },
+  "stim_file": {
+    "Description": "Path to the displayed bar-aperture noise-pattern frame, relative to /stimuli/."
+  },
+  "stim_name": {
+    "Description": "Filename of the displayed frame."
+  },
+  "stim_dur": {
+    "Description": "Intended frame display duration (duplicate of duration)."
+  },
+  "run": {
+    "Description": "Run number, as recorded in the source data file."
+  },
+  "fix_switch": {
+    "Description": "Whether the central fixation dot changed color on this frame (boolean). Detecting this color change was the participant's task during scanning."
+  },
+  "fix_color": {
+    "Description": "Hex color code of the central fixation dot during this frame."
+  },
+  "stim_onset": {
+    "Description": "Measured (actual, not intended) onset of the frame. Recorded for QA purposes to confirm presentation timing."
+  },
+  "key": {
+    "Description": "Key pressed during this frame's response-polling window, if any. Not pre-scored against fix_switch -- see 'response'."
+  },
+  "rt": {
+    "Description": "Time of the key press relative to the start of this frame's response-polling window, when a response was made. Not a reaction time relative to a fixation color change -- see 'response'."
+  },
+  "response": {
+    "Description": "String label 'fix_change' if a response key was pressed during this frame's polling window, otherwise n/a (not a boolean). This is NOT pre-aligned or scored against fix_switch: each frame independently polls for any keypress during its own ~333ms window regardless of that frame's own fix_switch value. Because of normal reaction time lag relative to these frame bins, a hit on a fix_switch=True event typically produces response='fix_change' on a frame 1-2 steps later, not on the fix_switch=True row itself."
+  }
+}
