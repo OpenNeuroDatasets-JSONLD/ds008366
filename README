@@ -1,0 +1,61 @@
+# Memory-guided visual search (MGVS)
+
+See dataset_description.json for authors, funding, and citation information.
+
+## Overview
+
+This dataset contains fMRI, eyetracking, and behavioral data from a study of
+memory-guided visual search. Participants first learned scene-location
+associations (ses-train), then performed a visual search task in the scanner
+in which memory for these associations could be used to predict the location
+of an upcoming search target (ses-01). A separate population receptive field
+(pRF) retinotopic mapping session is also included under ses-01.
+
+Tasks:
+- retinotopy: pRF bar-sweep mapping (ses-01, func)
+- search: memory-guided visual search (ses-01, func)
+- expose: passive scene re-exposure (ses-train, beh)
+- learn: scene-location association study/test (ses-train, beh)
+
+ses-train is a behavior-only session (no MRI) and is stored under the "beh"
+datatype rather than "func".
+
+## Eyetracking
+
+Raw EyeLink eyetracking data (.asc text format) are included under
+sourcedata/eyetracking/, named with BIDS-style session/task/run labels for
+traceability. These are not BIDS Eye-Tracking (BEP020) formatted and are
+placed in sourcedata/ (exempt from BIDS validation) accordingly. 
+
+## Fieldmaps
+
+Subjects sub-01 and sub-03 were acquired with reversed phase-encoding (PEPOLAR)
+spin-echo EPI fieldmaps (dir-AP/dir-PA), while all other subjects were acquired 
+with a gre_field_mapping (phase-difference) fieldmap. The BIDS validator's 
+INCONSISTENT_SUBJECTS warning for these two subjects' fmap/ files is expected 
+and can be disregarded.
+
+## Stimuli
+
+stimuli/ contains the base (unwarped) scene images (stim/), the
+warped versions used during the search task (stim_warped/), and the retinotopic 
+mapping bar-aperture frames (stim_retinotopy/). Some base images in stim/ are 
+only ever presented in warped form and are therefore not directly referenced 
+by any events.tsv; a small number of warp-variant combinations in stim_warped/ 
+likewise happen not to have been drawn for any of the 32 released subjects. 
+The BIDS validator's UNUSED_STIMULUS warning reflects this and is expected.
+
+## Derivatives
+
+derivatives/fmriprep/ includes only the T1w (native) and fsnative output
+spaces; MNI152NLin2009cAsym and fsaverage outputs are not included to reduce
+dataset size. The per-subject fMRIPrep visual reports (sub-XX.html), however,
+are fMRIPrep's standard, unmodified output and still show QC figures for all
+four output spaces fMRIPrep computed internally, and for a task-localizer
+scan. This localizer scan was collected opportunistically when scan time
+allowed, was not used in the associated manuscript, and is not included
+anywhere else in this dataset or its derivatives. Aside from appearing in
+these reports, it can be disregarded.
+
+derivatives/mriqc/ includes per-subject/session image quality metrics and
+reports; group-level summary files are not included.

@@ -1,0 +1,74 @@
+{
+  "onset": {
+    "Description": "Intended onset of the stimulus, relative to the start of the run."
+  },
+  "duration": {
+    "Description": "Intended on-screen duration of the scene (duplicate of stim_dur)."
+  },
+  "trial_type": {
+    "Description": "Constant label; the scene-exposure task has no experimental conditions, only passive viewing of each critical scene.",
+    "Levels": {
+      "expose": "Scene exposure trial"
+    }
+  },
+  "stim_file": {
+    "Description": "Path to the displayed scene image, relative to /stimuli/."
+  },
+  "stim_category": {
+    "Description": "Scene category label."
+  },
+  "stim_name": {
+    "Description": "Base stimulus identifier for the presented scene."
+  },
+  "stim_exemplar": {
+    "Description": "Exemplar number (1 or 2) distinguishing pairmates within a scene category."
+  },
+  "target_eccen": {
+    "Description": "Eccentricity (degrees of visual angle) of the studied target/competitor locations; fixed at 3.3."
+  },
+  "next_target_ang": {
+    "Description": "Polar angle (degrees) of the target location associated with this scene (to be learned in the subsequent study/test blocks). Column name retains the 'next_' prefix used in the shared data-logging code across tasks, but here it refers to this scene's own eventual target location, not an upcoming trial (unlike in task-search). Scenes are shown without any location information during exposure."
+  },
+  "next_target_x": {
+    "Description": "Cartesian x-coordinate (degrees of visual angle) corresponding to next_target_ang."
+  },
+  "next_target_y": {
+    "Description": "Cartesian y-coordinate (degrees of visual angle) corresponding to next_target_ang."
+  },
+  "next_comp_ang": {
+    "Description": "Polar angle (degrees) of the competitor location associated with this scene (i.e., the target location of this scene's pairmate). See next_target_ang note on naming."
+  },
+  "next_comp_x": {
+    "Description": "Cartesian x-coordinate (degrees of visual angle) corresponding to next_comp_ang."
+  },
+  "next_comp_y": {
+    "Description": "Cartesian y-coordinate (degrees of visual angle) corresponding to next_comp_ang."
+  },
+  "next_targ_comp_dist": {
+    "Description": "Angular distance (degrees) between this scene's target and competitor locations."
+  },
+  "run": {
+    "Description": "Run number, as recorded in the source data file."
+  },
+  "run_type": {
+    "Description": "Constant label identifying this as a scene-exposure trial (duplicate of trial_type)."
+  },
+  "trial": {
+    "Description": "Trial number within the run."
+  },
+  "stim_dur": {
+    "Description": "Intended scene presentation duration (duplicate of duration)."
+  },
+  "iti": {
+    "Description": "Intertrial interval duration."
+  },
+  "trial_dur": {
+    "Description": "Total trial duration (stim_dur + iti)."
+  },
+  "stim_onset": {
+    "Description": "Measured (actual, not intended) onset of scene presentation. Recorded for QA purposes to confirm presentation timing."
+  },
+  "stim_offset": {
+    "Description": "Measured (actual) offset of scene presentation. Recorded for QA purposes only."
+  }
+}

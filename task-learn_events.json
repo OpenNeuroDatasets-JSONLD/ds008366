@@ -1,0 +1,118 @@
+{
+  "onset": {
+    "Description": "Intended onset of the scene (study trials) or scene cue (test trials), relative to the start of the run."
+  },
+  "duration": {
+    "Description": "Intended on-screen duration of the scene/cue (duplicate of stim_dur)."
+  },
+  "trial_type": {
+    "Description": "Type of learning-task trial (duplicate of run_type).",
+    "Levels": {
+      "study": "Scene-location association study trial: scene followed by its associated location",
+      "test": "Memory-guided saccade test trial: scene cue followed by a blank response period"
+    }
+  },
+  "stim_file": {
+    "Description": "Path to the displayed scene image, relative to /stimuli/."
+  },
+  "cat_group": {
+    "Description": "Counterbalancing group label indicating which half of the scene-location associations this trial's scene belongs to (used to structure study/test block order; see Methods)."
+  },
+  "fback_dur": {
+    "Description": "Intended duration of the correct-location feedback shown after a response, on test trials (n/a on study trials)."
+  },
+  "isi": {
+    "Description": "Inter-stimulus interval between the scene cue and the response period (test trials; n/a on study trials)."
+  },
+  "iti": {
+    "Description": "Intertrial interval duration."
+  },
+  "loc_dur": {
+    "Description": "Duration the associated location was displayed, on study trials (n/a on test trials)."
+  },
+  "next_comp_ang": {
+    "Description": "Polar angle (degrees) of the competitor location associated with this trial's scene (i.e., the target location of this scene's pairmate). Column name retains the 'next_' prefix used in the shared data-logging code across tasks, but here it refers to this scene's own competitor location, not an upcoming trial (unlike in task-search)."
+  },
+  "next_comp_x": {
+    "Description": "Cartesian x-coordinate (degrees of visual angle) corresponding to next_comp_ang."
+  },
+  "next_comp_y": {
+    "Description": "Cartesian y-coordinate (degrees of visual angle) corresponding to next_comp_ang."
+  },
+  "next_targ_comp_dist": {
+    "Description": "Angular distance (degrees) between this scene's target and competitor locations."
+  },
+  "next_target_ang": {
+    "Description": "Polar angle (degrees) of the target location associated with this trial's scene (the location being studied/tested). Column name retains the 'next_' prefix used in the shared data-logging code across tasks, but here it refers to this scene's own target location, not an upcoming trial (unlike in task-search)."
+  },
+  "next_target_x": {
+    "Description": "Cartesian x-coordinate (degrees of visual angle) corresponding to next_target_ang."
+  },
+  "next_target_y": {
+    "Description": "Cartesian y-coordinate (degrees of visual angle) corresponding to next_target_ang."
+  },
+  "resp_dur": {
+    "Description": "Duration of the response window, on test trials (n/a on study trials)."
+  },
+  "run": {
+    "Description": "Run number, as recorded in the source data file."
+  },
+  "run_type": {
+    "Description": "Type of learning-task trial (duplicate of trial_type).",
+    "Levels": {
+      "study": "Scene-location association study trial",
+      "test": "Memory-guided saccade test trial"
+    }
+  },
+  "stim_category": {
+    "Description": "Scene category label."
+  },
+  "stim_dur": {
+    "Description": "Intended scene/cue presentation duration (duplicate of duration)."
+  },
+  "stim_exemplar": {
+    "Description": "Exemplar number (1 or 2) distinguishing pairmates within a scene category."
+  },
+  "stim_name": {
+    "Description": "Base stimulus identifier for the presented scene."
+  },
+  "target_eccen": {
+    "Description": "Eccentricity (degrees of visual angle) of the studied target/competitor locations; fixed at 3.3."
+  },
+  "trial": {
+    "Description": "Trial number within the run."
+  },
+  "trial_dur": {
+    "Description": "Total trial duration."
+  },
+  "stim_onset": {
+    "Description": "Measured (actual, not intended) onset of scene/cue presentation. Recorded for QA purposes to confirm presentation timing."
+  },
+  "loc_onset": {
+    "Description": "Measured (actual) onset of the location display (study trials) or feedback location (test trials). Recorded for QA purposes only."
+  },
+  "loc_offset": {
+    "Description": "Measured (actual) offset of the location display / feedback location. Recorded for QA purposes only."
+  },
+  "resp_x": {
+    "Description": "Horizontal gaze position (degrees of visual angle) of the memory-guided saccade response (test trials only). Used for participant feedback not analyses."
+  },
+  "resp_y": {
+    "Description": "Vertical gaze position (degrees of visual angle) of the memory-guided saccade response (test trials only). Used for participant feedback not analyses."
+  },
+  "rt": {
+    "Description": "Saccadic reaction time, when defined (test trials only)."
+  },
+  "targ_err": {
+    "Description": "Angular error (degrees) between the saccade endpoint and the target location (test trials only). Used for participant feedback not analyses."
+  },
+  "comp_err": {
+    "Description": "Angular error (degrees) between the saccade endpoint and the competitor location (test trials only). Used for participant feedback not analyses."
+  },
+  "acc": {
+    "Description": "Whether the saccade endpoint fell within the target location (boolean; test trials only). Used for participant feedback not analyses."
+  },
+  "acc_closer": {
+    "Description": "Whether the saccade endpoint fell closer to the target location than to the competitor location (boolean; test trials only). Used for participant feedback not analyses."
+  }
+}
