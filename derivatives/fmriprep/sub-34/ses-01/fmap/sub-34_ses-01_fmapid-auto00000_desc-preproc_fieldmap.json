@@ -1,0 +1,29 @@
+{
+  "AnatomicalReference": "sub-34_ses-01_fmapid-auto00000_desc-magnitude_fieldmap.nii.gz",
+  "AssociatedCoefficients": [
+    "sub-34_ses-01_fmapid-auto00000_desc-coeff0_fieldmap.nii.gz",
+    "sub-34_ses-01_fmapid-auto00000_desc-coeff1_fieldmap.nii.gz"
+  ],
+  "B0FieldIdentifier": "auto_00000",
+  "IntendedFor": [
+    "ses-01/anat/sub-34_ses-01_T1w.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-retinotopy_run-01_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-retinotopy_run-02_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-retinotopy_run-03_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-retinotopy_run-04_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-01_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-02_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-03_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-04_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-05_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-06_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-07_bold.nii.gz",
+    "ses-01/func/sub-34_ses-01_task-search_run-08_bold.nii.gz"
+  ],
+  "RawSources": [
+    "/data/sub-34/ses-01/fmap/sub-34_ses-01_phasediff.nii.gz",
+    "/data/sub-34/ses-01/fmap/sub-34_ses-01_magnitude1.nii.gz",
+    "/data/sub-34/ses-01/fmap/sub-34_ses-01_magnitude2.nii.gz"
+  ],
+  "Units": "Hz"
+}
