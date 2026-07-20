@@ -20,30 +20,34 @@ Tasks:
 ses-train is a behavior-only session (no MRI) and is stored under the "beh"
 datatype rather than "func".
 
+Participant demographics (age, sex, handedness, race, ethnicity, years of
+education) are in participants.tsv/participants.json.
+
 ## Eyetracking
 
 Raw EyeLink eyetracking data (.asc text format) are included under
 sourcedata/eyetracking/, named with BIDS-style session/task/run labels for
 traceability. These are not BIDS Eye-Tracking (BEP020) formatted and are
-placed in sourcedata/ (exempt from BIDS validation) accordingly. 
+placed in sourcedata/ (exempt from BIDS validation) accordingly.
+
+Each task's trial-phase (xDAT) and gaze-target (TarX/TarY) message codes,
+embedded as EyeLink MSG lines in the .asc files, are documented in the
+accompanying task-<label>_eyetrack.json files in the same directory.
 
 ## Fieldmaps
 
 Subjects sub-01 and sub-03 were acquired with reversed phase-encoding (PEPOLAR)
-spin-echo EPI fieldmaps (dir-AP/dir-PA), while all other subjects were acquired 
-with a gre_field_mapping (phase-difference) fieldmap. The BIDS validator's 
-INCONSISTENT_SUBJECTS warning for these two subjects' fmap/ files is expected 
-and can be disregarded.
+spin-echo EPI fieldmaps (dir-AP/dir-PA), while all other subjects were acquired
+with a gre_field_mapping (phase-difference) fieldmap.
 
 ## Stimuli
 
 stimuli/ contains the base (unwarped) scene images (stim/), the
-warped versions used during the search task (stim_warped/), and the retinotopic 
-mapping bar-aperture frames (stim_retinotopy/). Some base images in stim/ are 
-only ever presented in warped form and are therefore not directly referenced 
-by any events.tsv; a small number of warp-variant combinations in stim_warped/ 
-likewise happen not to have been drawn for any of the 32 released subjects. 
-The BIDS validator's UNUSED_STIMULUS warning reflects this and is expected.
+warped versions used during the search task (stim_warped/), and the retinotopic
+mapping bar-aperture frames (stim_retinotopy/). Some base images in stim/ are
+only ever presented in warped form and are therefore not directly referenced
+by any events.tsv; a small number of warp-variant combinations in stim_warped/
+likewise happen not to have been drawn for any of the 32 released subjects.
 
 ## Derivatives
 
