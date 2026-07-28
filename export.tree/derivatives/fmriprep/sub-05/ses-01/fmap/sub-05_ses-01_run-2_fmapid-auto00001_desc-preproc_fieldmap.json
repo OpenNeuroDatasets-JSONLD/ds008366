@@ -1,0 +1,20 @@
+{
+  "AnatomicalReference": "sub-05_ses-01_run-2_fmapid-auto00001_desc-magnitude_fieldmap.nii.gz",
+  "AssociatedCoefficients": [
+    "sub-05_ses-01_run-2_fmapid-auto00001_desc-coeff0_fieldmap.nii.gz",
+    "sub-05_ses-01_run-2_fmapid-auto00001_desc-coeff1_fieldmap.nii.gz"
+  ],
+  "B0FieldIdentifier": "auto_00001",
+  "IntendedFor": [
+    "ses-01/func/sub-05_ses-01_task-retinotopy_run-01_bold.nii.gz",
+    "ses-01/func/sub-05_ses-01_task-retinotopy_run-02_bold.nii.gz",
+    "ses-01/func/sub-05_ses-01_task-retinotopy_run-03_bold.nii.gz",
+    "ses-01/func/sub-05_ses-01_task-retinotopy_run-04_bold.nii.gz"
+  ],
+  "RawSources": [
+    "/data/sub-05/ses-01/fmap/sub-05_ses-01_run-02_phasediff.nii.gz",
+    "/data/sub-05/ses-01/fmap/sub-05_ses-01_run-02_magnitude1.nii.gz",
+    "/data/sub-05/ses-01/fmap/sub-05_ses-01_run-02_magnitude2.nii.gz"
+  ],
+  "Units": "Hz"
+}
